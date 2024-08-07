@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbx Layout</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial,sans-serif;
+        }
+        header{
+            background-color:#333;
+            color:#fff;
+            text-align:center;
+            padding:10px 0;
+        }
+        .container{
+            display: flex;
+        }
+        .column{
+            flex:1;
+            padding: 20px;
+        }
+        footer{
+            bckground-color:#333;
+            color:#fff;
+            text-align:center;
+            padding:10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO WEBDEVELOPMENT</h1>
+    </header>
+    <div clas="container">
+        <div class="column"
+        style="background-color:#f2f2f2;">
+        <h2>Front-end</h2>
+        <p>Front-end web development is the development of the graphical user interface of a website through the use of HTML, CSS, and JavaScript so users can view and interact with that website<br>
+            
+            HyperText Markup Language
+            HyperText Markup Language (HTML) is the backbone of any website development process, without which a web page does not exist <br>
+
+            Cascading Style Sheets (CSS)
+            Cascading Style Sheets (CSS) controls the presentation aspect of the site and allows your site to have its own unique look</p>
+          JavaScript
+JavaScript is an event-based imperative programming language (as opposed to HTML's declarative language model) that is used to transform a static HTML page into a dynamic interface. 
+    </div>
+<div class="column"
+style="background-colr:#e0e0e0";>
+<h2>Back-end</h2>
+<p>Back-end development means working on server-side software, which focuses on everything you can't see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers.
+    </p>
+</div>
+<div class="column"
+style="background-color:#ccc";>
+<h2>Database</h2>
+<p>A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).</p>
+</div>
+    </div>
+    <footer>
+        <P>Footer</P>
+    </footer>
+    
+</body>
+</html>

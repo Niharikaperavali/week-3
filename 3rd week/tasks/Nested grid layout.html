@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid Layout</title>
+</head>
+<style>
+    .parent-grid {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+    .header, .footer {
+      background-color: lightblue;
+      padding: 10px;
+    }
+    .main-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .sub-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      .item {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="parent-grid">
+  <div class="header">Header</div>
+  <div class="main-section">
+    <div class="item">Main Section 1</div>
+    <div class="sub-grid">
+      <div class="item">Sub Item 1</div>
+      <div class="item">Sub Item 2</div>
+      <div class="item">Sub Item 3</div>
+    </div>
+  </div>
+  <div class="footer">Footer</div>
+</div>
+</body>
+</html>

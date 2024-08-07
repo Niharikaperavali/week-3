@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid card Layout</title>
+</head>
+
+<style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .card {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 15px;
+  }
+  @media only screen and (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media only screen and (min-width: 480px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8rLKdgYVOP1XX4QeFPe0fQBepnX9n7CxxA&s" alt="Image 1">
+    <div class="card-content">
+      <h3>Rohit Sharma</h3>
+      <p>Talent – an apparently heartening term that has followed Rohit Sharma around like a shadow; even haunted him at times. It seems to be a burden that the cricketing fraternity has enforced upon him and, after more than a decade in the national setting, he has been weighed down by the label.
+
+        Harsha Bhogle spoke of whispers in the domestic circuit; of coaches and scouts spotting the effortless, free-flowing stroke-play of a Mumbai teenager. Having cruised through first-class cricket, with an average well above 50, he shot to the limelight when he scored a brisk unbeaten triple-hundred at the Ranji level.
+        </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.oneindia.com/img/2016/04/29-1461922756-web.jpg" alt="Image 2">
+    <div class="card-content">
+      <h3>Virat kholi</h3>
+      <p>Virat Kohli was born on 5 November 1988 in Delhi into a Punjabi Hindu family. His father, Prem Nath Kohli, worked as a criminal lawyer, and his mother, Saroj Kohli, served as a housewife. He has an older brother, Vikas, and an older sister, Bhawna.Kohli's formative years were spent in Uttam Nagar. He commenced his early education at Vishal Bharti Public School.[11] According to his family, Kohli exhibited an early affinity for cricket as a three-year-old. He would pick up a cricket bat and request his father to bowl to him.[12]</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM9EvqnlCNNbH0qPImkxgf8UY8KuVstukA0Q&s" alt="Image 3">
+    <div class="card-content">
+      <h3>Jasprit Bumrah</h3>
+      <p>Indian cricketer Jasprit Singh Bumrah competes internationally and represents his nation in all cricket competitions or tournaments. The only Asian to take five wickets in a test innings in South Africa, England, and Australia in the same year, he is regarded as one of the best bowlers of all time.He also holds the record for the most runs (29 runs) scored in a single over as a batsman in a Test Match (35 runs off the bowling of Stuart Broad at Edgbaston, Birmingham in 2022).
+    </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorative text</title>
+</head>
+<style>
+    .decorated-text {
+      position: relative;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  
+    .decorated-text::before {
+      content: "\1F48E"; 
+      margin-right: 10px;
+      color: #E74C3C; 
+  
+    .decorated-text::after {
+      content: "\1F4F7"; 
+      margin-left: 10px;
+      color: #3498DB; 
+    }
+  </style>
+  </head>
+  <body>
+  <div class="decorated-text">Welcome to Mypage!</div>
+  </body>
+  </html>
+  
+  

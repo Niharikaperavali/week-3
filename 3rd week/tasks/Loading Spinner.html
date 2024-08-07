@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Spinner</title>
+</head>
+<style>
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #3498db;
+      border-top: 5px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      transition: opacity 0.5s ease-in-out; /* Smooth show/hide transition */
+      opacity: 0; /* Initially hidden */
+    }
+  
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .show {
+      opacity: 1; /* Show spinner */
+    }
+  </style>
+  </head>
+  <body>
+  <button onclick="toggleSpinner()">Toggle Spinner</button>
+  <div class="spinner"></div>
+  
+  <script>
+    function toggleSpinner() {
+    const spinner = document.querySelector('.spinner');
+    spinner.classList.toggle('show');
+  }
+</script>
+</body>
+</html>
+

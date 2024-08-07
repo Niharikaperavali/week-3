@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsic Grid Layout</title>
+</head>
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+  }
+  header, main, footer {
+    padding: 20px;
+    border: 1px solid black;
+  }
+  @media only screen and (min-width: 768px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    }
+    main {
+      grid-area: main;
+    }
+    aside {
+      grid-area: sidebar;
+      border: 1px solid black;
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<header style="grid-area: header;">Header</header>
+<main style="grid-area: main;">Main Content</main>
+<aside>Sidebar</aside>
+<footer style="grid-area: footer;">Footer</footer>
+</body>
+</html>
+
+

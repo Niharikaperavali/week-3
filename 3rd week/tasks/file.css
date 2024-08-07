@@ -1,0 +1,28 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e67e22;
+    
+    --base-font-size: 16px;
+    --heading-font-size: 24px;
+    
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+  }
+  
+  body {
+    font-size: var(--base-font-size);
+  }
+  
+  h1, h2, h3 {
+    font-size: var(--heading-font-size);
+  }
+  
+  /* You can use the defined variables throughout your CSS styles */
+  .example {
+    color: var(--primary-color);
+    font-size: var(--base-font-size);
+    margin-bottom: var(--spacing-medium);
+  }
+  

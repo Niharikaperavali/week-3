@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout</title>
+</head>
+<style>
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  
+    /* For styling purposes */
+    .column:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  
+    .column:nth-child(even) {
+      background-color: #e6e6e6;
+    }
+  
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <h2>Column 1</h2>
+    <p>This is the content of column 1.</p>
+  </div>
+  <div class="column">
+    <h2>Column 2</h2>
+    <p>This is the content of column 2.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+  
